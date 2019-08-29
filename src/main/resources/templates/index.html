@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:replace="base :: navlinks"></div>
+    <h2>Index Page</h2>
+    <form th:action="@{/2}" method="post">
+        <h3>Hit button for About page</h3>
+        <div><input type="submit" value="Submit" /></div>
+        <h3>Hit button for Contact page</h3></form>
+        <form th:action="@{/3}" method="post">
+            <div><input type="submit" value="Submit" /></div>
+        </form>
+    </form>
+    <div th:replace="base :: footer"></div>
+</body>
+</html>
